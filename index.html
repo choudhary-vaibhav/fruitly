@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="scripts/config.js"></script>
+    <script src="scripts/script.js"></script>
+    <title>Fruitly</title>
+</head>
+<body>
+    <h1 class="d-flex justify-content-center align-items-center text-success">
+        Fruitly <small class="text-muted">- fruits search engine</small> 
+    </h1>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="w-50 p-3 d-flex">
+            <input id="searchBox" type="text" class="form-control me-2" placeholder="Search" aria-label="Search">
+            <button id="searchButton" class="btn btn-outline-success">SearchBox</button>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="card" style="width: 28rem; height:20rem">
+            <img style="width: 28rem; height:20rem" id="image" src="images/apple.jpg" class="card-img-top rounded" alt="fruit image">
+          </div>
+
+          <div class="card rounded border border-3 border-light" style="width: 22rem; height:20rem">
+            <div class="card-body">
+              <h4 id="card_name" class="card-title">apple</h4>
+              <p class="card-text">(nutritions of the fruit per 100g in grams)</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">calories: <span id="calories">52</span></li>
+              <li class="list-group-item">carbohydrates: <span id="carbohydrates">11.4</span></li>
+              <li class="list-group-item">fat: <span id="fat">0.4</span></li>
+              <li class="list-group-item">protein: <span id="protein">0.3</span></li>
+              <li class="list-group-item">sugar: <span id="sugar">10.3</span></li>
+            </ul>
+            
+          </div>
+      </div>
+</body>
+</html>
