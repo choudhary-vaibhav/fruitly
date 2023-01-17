@@ -20,7 +20,7 @@ function fruitData(){
     if(fruit.length == 0){
         fruit = 'apple';
     }
-    const URL = `https://sleepy-wildwood-70687.herokuapp.com/https://fruityvice.com/api/fruit/${fruit}`;  
+    const URL = `https://cors-proxy-gy16.onrender.com/https://fruityvice.com/api/fruit/${fruit}`;  
                 const promise = fetch(URL); // Async (Non Blocking)
                 promise.then(response=>{
                     response.json().then(result=>{
